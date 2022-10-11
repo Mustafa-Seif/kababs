@@ -1,0 +1,133 @@
+@media only screen and (max-width: 1200px) {
+    header ul{
+        display: none;
+    }
+    
+  }
+
+
+  @media only screen and (max-width: 992px) {
+
+
+    .header nav{
+      position: fixed;
+      top: 0;
+    }
+
+    
+    header nav ul li {
+      display: inline;
+      margin-left: 0;
+      padding: 10px;
+    }
+    header nav ul li:hover {
+      opacity: .5;
+    }
+
+    header nav ul li:first-child {
+      border:none;
+    }
+
+    #xMenu{
+      position: absolute;
+      top: 10%;
+      right:10%;
+      font-size: 1.5rem;
+      display: block;
+
+    }
+
+    .nav_right{
+      display: none;
+    }
+
+    #burger_menu{
+      display: block;
+    }
+
+    .hero_left h1 {
+        font-size: 100px;
+      }
+      .title_section h2 {
+        font-family: Abhaya Libre ExtraBold;
+        font-size: 2rem;
+        font-weight: 800;
+        letter-spacing: -0.08em;
+        color: var(--firstColor);
+      }
+
+      .btn{
+          margin-bottom: 10px;
+
+      }
+      
+
+    .hero_right,.hero_left{
+        width: 100%;
+    }
+
+    .more-products-wrapper{
+        display: none;
+    }
+
+  
+    .cardPro{
+        width: 50%;
+    }
+
+    .populer_card {
+       width: 45%;
+       margin-left: 10px;
+      }
+
+
+  }
+
+
+  @media only screen and (max-width: 768px) {
+
+    .abs1{
+      display: none;
+    }
+
+    .downlaod_left,.downlaod_right{
+        width: 100%;
+    }
+    .download {
+        padding: 20px 10px;
+      }
+
+    .cardPro{
+        width: 100%;
+    }
+
+    .populer_card {
+        width: 100%;
+       }
+       .card_Testimon{
+           width: 100%;
+           margin-bottom: 20px;
+       }
+
+       .Discounts {
+        padding: 10px;
+      }
+      .Discounts h4 {
+        font-size: 20px;
+      }
+     
+      .Discounts p {
+        font-size: 14px;
+      }
+      
+      .Discounts_btn {
+        
+        width: 100%;
+       
+      }
+
+      .footTop_R,.footContact,.footSupport,.footInfo{
+          width: 50%;
+      }
+     
+  }
