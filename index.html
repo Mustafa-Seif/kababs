@@ -5,369 +5,586 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="shortcut icon" href="./assests/Images/Vector.png">
-    <link rel="stylesheet" href="./media.css">
-    <title>yannal</title>
+    <title>Yannal</title>
+    <!-- font family 1 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;700;800&display=swap" rel="stylesheet">
+    <!-- font family 2 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- css files -->
+    <link rel="stylesheet" href="css/general-style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/break-points.css">
+    <!-- script file -->
+    <script defer src="js/script.js"></script>
 </head>
 
 <body>
-    <!-- START HEADER  -->
-    <header>
+    <section class="hero sec-mb">
+        <header>
+            <div class="container">
+                <div class="d-flex">
+                    <img src="images/logo.svg" alt="website logo" class="logo">
+                    <div class="menu-icon lg-show"><img src="images/menu-bar.png" alt="menu"></div>
+                    <nav class="d-flex lg-flex-col lg-nav-style">
+                        <ul class="links d-flex lg-flex-col">
+                            <li class="active"><a href="#">menu</a></li>
+                            <li><a href="#">about us</a></li>
+                            <li><a href="#">our specials</a></li>
+                            <li><a href="#">our locations</a></li>
+                            <li><a href="#">our cheffs</a></li>
+                        </ul>
+                        <div class="controls d-flex ">
+                            <img src="images/icons/search-icon.svg" alt="search">
+                            <span class="basket">
+                                <img src="images/icons/basket-icon.svg" alt="basket">
+                            </span>
+                            <img src="images/icons/user-icon.svg" alt="profile">
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
         <div class="container">
-            <nav class="flex">
-                <div class="logo">
-                    <img src="/assests/Images/Vector.png" alt="logo">
-                </div>
-                <ul>
-                    <li><a href="#">menu</a></li>
-                    <li><a href="#">about us</a></li>
-                    <li><a href="#">our specials</a></li>
-                    <li><a href="#">our locations</a></li>
-                    <li><a href="#">our cheffs</a></li>
-                    <li id="xMenu"><i class="fa-solid fa-xmark"></i></li>
-                </ul>
-                <div class="nav_right flex">
-                    <div><img src="/assests/Images/Union.png" alt="Union"></div>
-                    <div><img src="/assests/Images/Union(1).png" alt="Union"></div>
-                    <div><img src="/assests/Images/person.png" alt="person"></div>
-                </div>
-                <div id="burger_menu">
-                    <i class="fa-solid fa-bars"></i>
-                </div>
-            </nav>
-        </div>
-    </header>
-    <!-- END HEADER  -->
-    <!-- START HERO  -->
-    <section class="hero">
-        <div class="container2">
-            <div class="hero_warpper flex">
-                <div class="hero_left">
-                    <p>Now taking online ordres</p>
-                    <h1>kababs</h1>
-                    <p>Restaurant style Yogurt Mint Sauce is delicious dip which is quick and easy to ... This is a
-                        standard
-                        Indian mint chutney served with poppadums along with mint and lemon.</p>
-                    <button class="btn">Add To Cart</button>
-                    <button class="btn"> Book a Table</button>
-                    <div class="data_hero">
-                        <div class="Lunch">
-                            <h4>Lunch</h4>
-                            <p>1:00-03:00pm</p>
+            <div class="wrapper d-flex md-flex-wrap">
+                <div class="text-wrapper md-full-width">
+                    <h1 class="special-heading">kababs</h1>
+                    <p>
+                        Restaurant style Yogurt Mint Sauce is delicious dip which is quick and easy to
+                        ... This is a standard Indian mint
+                        chutney served with poppadums along with mint and lemon.
+                    </p>
+                    <div class="buttons d-flex">
+                        <button class="btn red-btn">Add to cart</button>
+                        <button class="btn dark-btn">Book a table</button>
+                    </div>
+                    <div class="time d-flex">
+                        <div>
+                            <h3>Lunch</h3>
+                            <span>1:00-03:00pm</span>
                         </div>
-                        <div class="dinner">
-                            <h4>Dinner</h4>
-                            <p>7:00-10:00pm</p>
+                        <div>
+                            <h3>Dinner</h3>
+                            <span>7:00-10:00pm</span>
                         </div>
                     </div>
                 </div>
-                <div class="hero_right">
-                    <img src="/assests/Images/130725dd-674d-42d1-bfc6-3234de452a89.jpg" alt="hero_img">
-                </div>
-            </div>
-        </div>
-        <div class="abs1">
-            <img src="./assests/New folder/Pagination.png" alt="Pagination">
-        </div>
-    </section>
-    <!-- END HERO  -->
-    <section class="products">
-        <div class="container2">
-            <div class="products_wrapper ">
-                <div class="title_section">
-                    <p>Online Store</p>
-                    <h2>Popular Products</h2>
-                </div>
-                <div class="product_card flex">
-                    <div class="cardPro">
-                        <img src="./assests/New folder/Dish.png" alt="img">
-                        <img src="./assests/New folder/Rating2.png" alt="img">
-                        <p>Chinese</p>
-                        <b>Hot Wings</b>
-                        <button class="btn">Add To Cart</button>
-
-                    </div>
-                    <div class="cardPro">
-                        <img src="./assests/New folder/Dish2.png" alt="img">
-                        <img src="./assests/New folder/Rating2.png" alt="img">
-                        <p>Indian Style</p>
-                        <b>Rice with Curry</b>
-                        <button>Add To Cart</button>
-
-                    </div>
-                    <div class="cardPro">
-                        <img src="./assests/New folder/Dish3.png" alt="img">
-                        <img src="./assests/New folder/Rating2.png" alt="img">
-                        <p>Pakistani Style</p>
-                        <b>Chapatees</b>
-                        <button>Add To Cart</button>
-
-                    </div>
-                    <div class="cardPro">
-                        <img src="./assests/New folder/Dish4.png" alt="img">
-                        <img src="./assests/New folder/Rating2.png" alt="img">
-                        <p>Western Style</p>
-                        <b>Sweetdish</b>
-                        <button>Add To Cart</button>
-
-                    </div>
+                <div class="img-wrapper md-full-width">
+                    <img src="images/hero-img.png" alt="hero image">
                 </div>
             </div>
         </div>
     </section>
-    <!-- start moro product  -->
-    <section class="more-products-wrapper flex">
-        <div class="more-products-right Poppins nav-text flex">
-            <ul class="more-products-list">
-                <li><img src="./assests/New folder/mug.png" alt="#"><span>Coffee</span></li>
-                <li><img src="./assests/New folder/burger.png" alt="#">
-                    <p>Fast Food</p>
-                </li>
-                <li><img src="./assests/New folder/pizza.png" alt="#">
-                    <p>Pizza</p>
-                </li>
-                <li><img src="./assests/New folder/cooking-bot.png" alt="#">
-                    <p>Desi Menu</p>
-                </li>
-                <li><img src="./assests/New folder/dounut.png" alt="#">
-                    <p>Desserts</p>
-                </li>
-            </ul>
-            <img src="./assests/New folder/line.png" alt="">
-        </div>
-        <div class="more-products-left flex">
-            <div class="more-products-left-title Poppins nav-text">
-                <p>Faster Food Delivery Service <img src="./assests/New folder/delivery-man 1.png" alt=""></p>
-            </div>
-            <h2 class="Abhaya heading">Get delivered <br> while it is still hot.</h2>
-            <p class="para Poppins nav-text">Bring together your discussions memberships and content.
-                Start your 7-day free trial.</p>
-            <div class="btn-primary">
-                <button>GET STARTED</button>
-            </div>
-        </div>
-        <div class="Decor">
-            <img src="./assests/New folder/Decor.png" alt="Decor">
-        </div>
-        <div class="coffee">
-            <img src="./assests/New folder/Coffee Cup.png" alt="Coffee">
-        </div>
-        <div class="leaf">
-            <img src="./assests/New folder/image 34.png" alt="image">
-        </div>
-    </section>
-    <!-- end moro product  -->
-    <!-- start moro product  -->
-    <section class="populer">
-        <div class="container2">
-            <div class="title_section">
-                <p>Popular Menu</p>
-                <h2>Amazing Food Served <br> With Delicacy</h2>
-            </div>
-            <div class="card_warpper flex">
-                <div class="populer_card">
-                    <div class="card_img flex"><img src="./assests/New folder/Dish.png" alt="dish"></div>
-                    <div><img src="./assests/New folder/Rating2.png" alt="Rating2"></div>
-                    <b>Dishim with Fries and Sause</b>
-                    <p>Lorem Ipsum Lorem Ipsum is simply and dummy text of the printing.</p>
-                    <div class="populer_card_icon flex">
-                        <p>$7.10</p>
-                        <div class="flex card_foot">
-                            <img src="./assests/New folder/Favorite icon.png" alt="Favorite">
-                            <img src="./assests/New folder/Share icon.png" alt="Favorite">
-                        </div>
+    <!-- end hero seciton -->
+    <section class="popular-products sec-mb">
+        <div class="container">
+            <h2 class="special-heading">Popular Products</h2>
+            <div class="cards-wrapper d-flex md-flex-wrap">
+                <div class="card md-half-width sm-full-width">
+                    <div class="dish-img">
                     </div>
-                </div>
-                <div class="populer_card">
-                    <div class="card_img flex"><img src="./assests/New folder/Dish2.png" alt="dish"></div>
-                    <div><img src="./assests/New folder/Rating2.png" alt="Rating2"></div>
-                    <b>Dishim with Fries and Sause</b>
-                    <p>Lorem Ipsum Lorem Ipsum is simply and dummy text of the printing.</p>
-                    <div class="populer_card_icon flex">
-                        <p>$7.10</p>
-                        <div class="flex card_foot">
-                            <img src="./assests/New folder/Favorite icon.png" alt="Favorite">
-                            <img src="./assests/New folder/Share icon.png" alt="Favorite">
-                        </div>
+                    <div class="rating">
+                        <img src="images/icons/full-star.svg" alt="rating1">
+                        <img src="images/icons/full-star.svg" alt="rating2">
+                        <img src="images/icons/full-star.svg" alt="rating3">
+                        <img src="images/icons/full-star.svg" alt="rating4">
+                        <img src="images/icons/full-star.svg" alt="rating5">
                     </div>
+                    <span class="type">Chinese</span>
+                    <h3>Hot Wings</h3>
+                    <button class="btn red-btn d-flex">
+                        <span>Add to cart</span>
+                        <span>$14.00</span>
+                    </button>
                 </div>
-                <div class="populer_card">
-                    <div class="card_img flex"><img src="./assests/New folder/Dish3.png" alt="dish"></div>
-                    <div><img src="./assests/New folder/Rating2.png" alt="Rating2"></div>
-                    <b>Dishim with Fries and Sause</b>
-                    <p>Lorem Ipsum Lorem Ipsum is simply and dummy text of the printing.</p>
-                    <div class="populer_card_icon flex">
-                        <p>$7.10</p>
-                        <div class="flex card_foot">
-                            <img src="./assests/New folder/Favorite icon.png" alt="Favorite">
-                            <img src="./assests/New folder/Share icon.png" alt="Favorite">
-                        </div>
+                <div class="card md-half-width sm-full-width">
+                    <div class="dish-img">
                     </div>
-                </div>
-                <div class="populer_card">
-                    <div class="card_img flex"><img src="./assests/New folder/Dish4.png" alt="dish"></div>
-                    <div><img src="./assests/New folder/Rating2.png" alt="Rating2"></div>
-                    <b>Dishim with Fries and Sause</b>
-                    <p>Lorem Ipsum Lorem Ipsum is simply and dummy text of the printing.</p>
-                    <div class="populer_card_icon flex">
-                        <p>$7.10</p>
-                        <div class="flex card_foot">
-                            <img src="./assests/New folder/Favorite icon.png" alt="Favorite">
-                            <img src="./assests/New folder/Share icon.png" alt="Favorite">
-                        </div>
+                    <div class="rating">
+                        <img src="images/icons/full-star.svg" alt="rating1">
+                        <img src="images/icons/full-star.svg" alt="rating2">
+                        <img src="images/icons/full-star.svg" alt="rating3">
+                        <img src="images/icons/full-star.svg" alt="rating4">
+                        <img src="images/icons/empty-star.svg" alt="rating5">
                     </div>
+                    <span class="type">Indian Style</span>
+                    <h3>Rice with Curry</h3>
+                    <button class="btn red-btn d-flex">
+                        <span>Add to cart</span>
+                        <span>$22.00</span>
+                    </button>
                 </div>
-                <div class="populer_card">
-                    <div class="card_img flex"><img src="./assests/New folder/Dish5.png" alt="dish"></div>
-                    <div><img src="./assests/New folder/Rating2.png" alt="Rating2"></div>
-                    <b>Dishim with Fries and Sause</b>
-                    <p>Lorem Ipsum Lorem Ipsum is simply and dummy text of the printing.</p>
-                    <div class="populer_card_icon flex">
-                        <p>$7.10</p>
-                        <div class="flex card_foot">
-                            <img src="./assests/New folder/Favorite icon.png" alt="Favorite">
-                            <img src="./assests/New folder/Share icon.png" alt="Favorite">
-                        </div>
+                <div class="card md-half-width sm-full-width">
+                    <div class="dish-img">
                     </div>
-                </div>
-                <div class="populer_card">
-                    <div class="card_img flex"><img src="./assests/New folder/Dish6.png" alt="dish"></div>
-                    <div><img src="./assests/New folder/Rating2.png" alt="Rating2"></div>
-                    <b>Dishim with Fries and Sause</b>
-                    <p>Lorem Ipsum Lorem Ipsum is simply and dummy text of the printing.</p>
-                    <div class="populer_card_icon flex">
-                        <p>$7.10</p>
-                        <div class="flex card_foot">
-                            <img src="./assests/New folder/Favorite icon.png" alt="Favorite">
-                            <img src="./assests/New folder/Share icon.png" alt="Favorite">
-                        </div>
+                    <div class="rating">
+                        <img src="images/icons/full-star.svg" alt="rating1">
+                        <img src="images/icons/full-star.svg" alt="rating2">
+                        <img src="images/icons/full-star.svg" alt="rating3">
+                        <img src="images/icons/full-star.svg" alt="rating4">
+                        <img src="images/icons/full-star.svg" alt="rating5">
                     </div>
+                    <span class="type">Pakistani Style</span>
+                    <h3>Chapatees</h3>
+                    <button class="btn red-btn d-flex">
+                        <span>Add to cart</span>
+                        <span>$18.00</span>
+                    </button>
                 </div>
-                <!-- <button>See All Menu</button> -->
+                <div class="card md-half-width sm-full-width">
+                    <div class="dish-img">
+                    </div>
+                    <div class="rating">
+                        <img src="images/icons/full-star.svg" alt="rating1">
+                        <img src="images/icons/full-star.svg" alt="rating2">
+                        <img src="images/icons/full-star.svg" alt="rating3">
+                        <img src="images/icons/full-star.svg" alt="rating4">
+                        <img src="images/icons/empty-star.svg" alt="rating5">
+                    </div>
+                    <span class="type">Western Style</span>
+                    <h3>Sweetdish</h3>
+                    <button class="btn red-btn d-flex">
+                        <span>Add to cart</span>
+                        <span>$16.00</span>
+                    </button>
+                </div>
             </div>
         </div>
     </section>
-    <!-- end moro product  -->
-    <!-- start moro download  -->
-    <section class="download">
-        <div class="container2">
-            <div class="downlaod_wrapper flex">
-                <div class="downlaod_left">
-                    <img src="/assests/Images/Mobile.png" alt="Mobile">
+    <!-- end popular products section -->
+    <section class="categories sec-mb">
+        <div class="container">
+            <div class="wrapper d-flex md-flex-col-rev">
+                <div class="categories-wrapper md-full-width">
+                    <ul class="categories-list">
+                        <li class="d-flex btn red-btn">
+                            <div class="img-holder cat1"></div>
+                            <div>Coffee</div>
+                        </li>
+                        <li class="d-flex">
+                            <div class="img-holder cat2"></div>
+                            <div>Fast Food</div>
+                        </li>
+                        <li class="d-flex">
+                            <div class="img-holder cat3"></div>
+                            <div>Pizza</div>
+                        </li>
+                        <li class="d-flex">
+                            <div class="img-holder cat4"></div>
+                            <div>Desi Menu</div>
+                        </li>
+                        <li class="d-flex">
+                            <div class="img-holder cat5"></div>
+                            <div>Desserts</div>
+                        </li>
+                        <li class="d-flex">
+                            <div class="img-holder cat1"></div>
+                            <div>Coffee</div>
+                        </li>
+                        <li class="d-flex">
+                            <div class="img-holder cat2"></div>
+                            <div>Fast Food</div>
+                        </li>
+                        <li class="d-flex">
+                            <div class="img-holder cat3"></div>
+                            <div>Pizza</div>
+                        </li>
+                        <li class="d-flex">
+                            <div class="img-holder cat4"></div>
+                            <div>Desi Menu</div>
+                        </li>
+                        <li class="d-flex">
+                            <div class="img-holder cat5"></div>
+                            <div>Desserts</div>
+                        </li>
+                    </ul>
                 </div>
-                <div class="downlaod_right">
-                    <b>Download Our App</b>
-                    <h2>It’s all here.
+                <div class="text-wrapper md-full-width md-mb-30">
+                    <div class="dots">
+                        <span class='active'></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="delivery-note">
+                        <span>Faster Food Delivery Service</span>
+                        <img src="images/icons/delivery-man.png" alt="">
+                    </div>
+                    <h2 class="special-heading">
+                        Get delivered <br> while it is still hot.
+                    </h2>
+                    <p class="sm-full-width">
+                        Bring together your discussions memberships and content.
+                        Start your 7-day free trial.
+                    </p>
+                    <button class="btn dark-btn">
+                        GET STARTED
+                    </button>
+                </div>
+            </div>
+        </div>
+        <img src="images/coffee-cup.png" alt="section decor" class="cup-decor">
+    </section>
+    <section class="popular-menu sec-mb">
+        <div class="container">
+            <h2 class="special-heading">Amazing Food Served <br> With Delicacy</h2>
+            <div class="cards-wrapper d-flex-wrap">
+                <div class="card sm-full-width">
+                    <div class="img-holder">
+                        <img src="images/dish1.png" alt="menu-item">
+                    </div>
+                    <div class="rating">
+                        <img src="images/icons/full-star.svg" alt="rating1">
+                        <img src="images/icons/full-star.svg" alt="rating2">
+                        <img src="images/icons/full-star.svg" alt="rating3">
+                        <img src="images/icons/full-star.svg" alt="rating4">
+                        <img src="images/icons/full-star.svg" alt="rating5">
+                    </div>
+                    <h3>Dishim with Fries and Sause</h3>
+                    <p>Lorem Ipsum Lorem Ipsum is simply and dummy text of the printing.</p>
+                    <div class="price d-flex">
+                        <span>$7.10</span>
+                        <span class="d-flex">
+                            <button class="btn red-btn">
+                                <img src="images/icons/like-icon.png" alt="like button">
+                            </button>
+                            <button class="btn dark-btn">
+                                <img src="images/icons/share-icon.png" alt="share button">
+                            </button>
+                        </span>
+                    </div>
+                </div>
+                <div class="card sm-full-width">
+                    <div class="img-holder">
+                        <img src="images/dish2.png" alt="menu-item">
+                    </div>
+                    <div class="rating">
+                        <img src="images/icons/full-star.svg" alt="rating1">
+                        <img src="images/icons/full-star.svg" alt="rating2">
+                        <img src="images/icons/full-star.svg" alt="rating3">
+                        <img src="images/icons/full-star.svg" alt="rating4">
+                        <img src="images/icons/full-star.svg" alt="rating5">
+                    </div>
+                    <h3>Dishim with Fries and Sause</h3>
+                    <p>Lorem Ipsum Lorem Ipsum is simply and dummy text of the printing.</p>
+                    <div class="price d-flex">
+                        <span>$7.10</span>
+                        <span class="d-flex">
+                            <button class="btn red-btn">
+                                <img src="images/icons/like-icon.png" alt="like button">
+                            </button>
+                            <button class="btn dark-btn">
+                                <img src="images/icons/share-icon.png" alt="share button">
+                            </button>
+                        </span>
+                    </div>
+                </div>
+                <div class="card sm-full-width">
+                    <div class="img-holder">
+                        <img src="images/dish3.png" alt="menu-item">
+                    </div>
+                    <div class="rating">
+                        <img src="images/icons/full-star.svg" alt="rating1">
+                        <img src="images/icons/full-star.svg" alt="rating2">
+                        <img src="images/icons/full-star.svg" alt="rating3">
+                        <img src="images/icons/full-star.svg" alt="rating4">
+                        <img src="images/icons/full-star.svg" alt="rating5">
+                    </div>
+                    <h3>Dishim with Fries and Sause</h3>
+                    <p>Lorem Ipsum Lorem Ipsum is simply and dummy text of the printing.</p>
+                    <div class="price d-flex">
+                        <span>$7.10</span>
+                        <span class="d-flex">
+                            <button class="btn red-btn">
+                                <img src="images/icons/like-icon.png" alt="like button">
+                            </button>
+                            <button class="btn dark-btn">
+                                <img src="images/icons/share-icon.png" alt="share button">
+                            </button>
+                        </span>
+                    </div>
+                </div>
+                <div class="card sm-full-width">
+                    <div class="img-holder">
+                        <img src="images/dish4.png" alt="menu-item">
+                    </div>
+                    <div class="rating">
+                        <img src="images/icons/full-star.svg" alt="rating1">
+                        <img src="images/icons/full-star.svg" alt="rating2">
+                        <img src="images/icons/full-star.svg" alt="rating3">
+                        <img src="images/icons/full-star.svg" alt="rating4">
+                        <img src="images/icons/full-star.svg" alt="rating5">
+                    </div>
+                    <h3>Dishim with Fries and Sause</h3>
+                    <p>Lorem Ipsum Lorem Ipsum is simply and dummy text of the printing.</p>
+                    <div class="price d-flex">
+                        <span>$7.10</span>
+                        <span class="d-flex">
+                            <button class="btn red-btn">
+                                <img src="images/icons/like-icon.png" alt="like button">
+                            </button>
+                            <button class="btn dark-btn">
+                                <img src="images/icons/share-icon.png" alt="share button">
+                            </button>
+                        </span>
+                    </div>
+                </div>
+                <div class="card sm-full-width">
+                    <div class="img-holder">
+                        <img src="images/dish5.png" alt="menu-item">
+                    </div>
+                    <div class="rating">
+                        <img src="images/icons/full-star.svg" alt="rating1">
+                        <img src="images/icons/full-star.svg" alt="rating2">
+                        <img src="images/icons/full-star.svg" alt="rating3">
+                        <img src="images/icons/full-star.svg" alt="rating4">
+                        <img src="images/icons/full-star.svg" alt="rating5">
+                    </div>
+                    <h3>Dishim with Fries and Sause</h3>
+                    <p>Lorem Ipsum Lorem Ipsum is simply and dummy text of the printing.</p>
+                    <div class="price d-flex">
+                        <span>$7.10</span>
+                        <span class="d-flex">
+                            <button class="btn red-btn">
+                                <img src="images/icons/like-icon.png" alt="like button">
+                            </button>
+                            <button class="btn dark-btn">
+                                <img src="images/icons/share-icon.png" alt="share button">
+                            </button>
+                        </span>
+                    </div>
+                </div>
+                <div class="card sm-full-width">
+                    <div class="img-holder">
+                        <img src="images/dish6.png" alt="menu-item">
+                    </div>
+                    <div class="rating">
+                        <img src="images/icons/full-star.svg" alt="rating1">
+                        <img src="images/icons/full-star.svg" alt="rating2">
+                        <img src="images/icons/full-star.svg" alt="rating3">
+                        <img src="images/icons/full-star.svg" alt="rating4">
+                        <img src="images/icons/full-star.svg" alt="rating5">
+                    </div>
+                    <h3>Dishim with Fries and Sause</h3>
+                    <p>Lorem Ipsum Lorem Ipsum is simply and dummy text of the printing.</p>
+                    <div class="price d-flex">
+                        <span>$7.10</span>
+                        <span class="d-flex">
+                            <button class="btn red-btn">
+                                <img src="images/icons/like-icon.png" alt="like button">
+                            </button>
+                            <button class="btn dark-btn">
+                                <img src="images/icons/share-icon.png" alt="share button">
+                            </button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <button class="btn red-btn d-flex">
+                <span>See All Menu</span>
+                <img src="images/icons/arrow-right.png" alt="see all menue items" class="see-menu">
+            </button>
+        </div>
+    </section>
+    <section class="app sec-mb">
+        <div class="container">
+            <div class="wrapper d-flex sm-flex-col-rev">
+                <div class="img-wrapper md-half-width sm-full-width">
+                    <img src="images/mobile-app.png" alt="mobile application">
+                </div>
+                <div class="text-wrapper md-half-width sm-full-width">
+                    <h2 class="special-heading">
+                        It’s all here. <br>
                         All in one app.
                     </h2>
-                    <p>Discover local, on-demand delivery or Pickup from restaurants, nearby grocery and convenience
-                        stores, and more.</p>
-                    <div class="down_right_img">
-                        <img src="./assests/New folder/button-App store.png" alt="App store">
-                        <img src="./assests/New folder/button-Play store.png" alt="App store">
+                    <p class="md-full-width">
+                        Discover local, on-demand delivery or Pickup from restaurants, nearby grocery and convenience
+                        stores, and more.
+                    </p>
+                    <div class="store">
+                        <a href="#">
+                            <img src="images/google-play.png" alt="google play">
+                        </a>
+                        <a href="#">
+                            <img src="images/app-store.png" alt="app store">
+
+                        </a>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="Decore2">
-            <img src="./assests/New folder/Decore2.png" alt="Decore2">
         </div>
     </section>
-    <!-- end moro download  -->
-    <!-- start moro download  -->
-    <setion class="Testimonial">
-        <div class="container2">
-            <div class="title_section">
-                <p>Testimonial</p>
-                <h2>What they saying</h2>
-            </div>
-            <div class="Testimonial_wrapper flex">
-                <div class="card_Testimon flex">
-                    <div class="Testimon_img">
-                        <img src="./assests/New folder/Rectangle 4274 (1).png" alt="Rectangle">
-                    </div>
-                    <div class="Testimon_text">
-                        <h4>Natasha Malik</h4>
-                        <p>California</p>
-                        <div><img src="./assests/New folder/Rating2.png" alt=""></div>
-                        <p>“Him rendered may attended concerns jennings reserved now.<span class="def">Sympathize</span>  did now preference
-                            unpleasing mrs few. Mrs for<span class="def">hour game</span>   room want are fond dare. For detract charmed add
-                            talking age. Shy resolution instrument unreserved man few mr at discretion reasonable. Age
-                            out full gate bed day lose.”</p>
-                    </div>
-                </div>
-                <div class="card_Testimon flex">
-                    <div class="Testimon_img">
-                        <img src="./assests/New folder/Rectangle 4274.png" alt="Rectangle">
-                    </div>
-                    <div class="Testimon_text">
-                        <h4>AR Shakir</h4>
-                        <p>Arizona</p>
-                        <div><img src="./assests/New folder/Rating2.png" alt=""></div>
-                        <p>“Out believe has request not how comfort evident. Up <span class="def">delight cousins</span> we feeling minutes. Genius has looked end piqued spring. Down has rose feel find man. Learning day desirous informed expenses material returned six the. She<span class="def">enabled</span>  invited exposed him another. <span class="def">Reasonably conviction solicitude</span>  me mr at discretion reasonable. Age out full gate bed day lose.”</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </setion>
-    <!-- end moro download  -->
-    <!-- start moro download  -->
-    <section class="Discounts">
-        <h4>Get special Discounts
-            <img src="./assests/New folder/Shape.png" alt="Shape">
-        </h4>
-        <p>Input email address and complete your subscription to <br>get our special offer.</p>
-        <div class="Discounts_btn">
-            <input type="text" placeholder="shakir260@gmail.com">
-            <input type="button" value="Subscribe">
-        </div>
-    </section>
-    <!-- end moro download  -->
-    <!-- start moro footer  -->
-    <footer>
-        <div class="container2">
-            <div class="footer_warpper ">
-                <div class="footTop flex">
-                    <div class="footTop_R">
-                        <img src="./assests/Images/logo.png" alt="logo" class="logo_footer">
-                        <div class="social">
-                            <img src="./assests/New folder/facebook-icon.png" alt="">
-                            <i class="fa-brands fa-twitter"></i>
-                            <img src="./assests/New folder/instagram-icon.png" alt="">
-                            <img src="./assests/New folder/linkedin-icon.png" alt="">
+    <section class="testimonails sec-mb">
+        <div class="container">
+            <h2 class="special-heading">
+                What they saying
+            </h2>
+            <div class="wrapper d-flex md-flex-wrap">
+                <!-- 1 -->
+                <div class="feedback  md-full-width md-mb-50">
+                    <div class="client-info d-flex xsm-flex-col">
+                        <div class="d-flex feedback-header">
+                            <img src="images/client1.png" alt="client image" class="client-pic">
+                            <!-- show only in xsmall screens -->
+                            <div class="client-det">
+                                <h4>Natasha Malik</h4>
+                                <p class="country">California</p>
+                                <div class="rating">
+                                    <img src="images/icons/full-star.svg" alt="rating1">
+                                    <img src="images/icons/full-star.svg" alt="rating2">
+                                    <img src="images/icons/full-star.svg" alt="rating3">
+                                    <img src="images/icons/full-star.svg" alt="rating4">
+                                    <img src="images/icons/full-star.svg" alt="rating5">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feedback-text">
+                            <!-- hide in xsmall screens -->
+                            <div class="client-det">
+                                <h4>Natasha Malik</h4>
+                                <p class="country">California</p>
+                                <div class="rating">
+                                    <img src="images/icons/full-star.svg" alt="rating1">
+                                    <img src="images/icons/full-star.svg" alt="rating2">
+                                    <img src="images/icons/full-star.svg" alt="rating3">
+                                    <img src="images/icons/full-star.svg" alt="rating4">
+                                    <img src="images/icons/full-star.svg" alt="rating5">
+                                </div>
+                            </div>
+                            <p>
+                                “Him rendered may attended concerns jennings reserved now. <span>Sympathize</span>
+                                did
+                                now
+                                preference unpleasing mrs few. Mrs for <span>hour game</span> room want are fond
+                                dare.
+                                For
+                                detract charmed add talking age. Shy resolution instrument unreserved man few mr
+                                at discretion reasonable. Age out full gate bed day lose.”
+                            </p>
                         </div>
                     </div>
-                    <div class="footContact">
-                        <h4>Contact</h4>
-                        <p><span><img src="./assests/New folder/Location.png" alt=""></span>  F1 - 320 Jeff Heights, Main Blvd,<br>
-                            Gulberg, Lahore, Pakistan</p>
-                        <p><span><img src="./assests/New folder/call.png" alt=""></span> +92 - 300 - 115 - 222 -444 </p>
-                        <p> <span><img src="./assests/New folder/SMS.png" alt=""></span> support@yannal.com </p>
-                    </div>
-                    <div class="footSupport">
-                        <h4>Faq</h4>
-                        <p>Shipping & Returns</p>
-                        <p>Contact Us</p>
-                        <p>Our Partners</p>
-                    </div>
-                    <div class="footInfo">
-                        <h4>Info</h4>
-                        <p>Dates</p>
-                        <p>Parties</p>
-                        <p>Brithdays</p>
-                        <p>Menu</p>
-                    </div>
                 </div>
-                <div class="footButton">
-                    <p>©2021 Yannal Resturant</p>
+                <!-- 2 -->
+                <div class="feedback md-full-width">
+                    <div class="client-info d-flex xsm-flex-col">
+                        <div class="d-flex feedback-header">
+                            <img src="images/client2.png" alt="client image" class="client-pic">
+                            <!-- show only in xsmall screens -->
+                            <div class="client-det">
+                                <h4>AR Shakir</h4>
+                                <p class="country">Arizona</p>
+                                <div class="rating">
+                                    <img src="images/icons/full-star.svg" alt="rating1">
+                                    <img src="images/icons/full-star.svg" alt="rating2">
+                                    <img src="images/icons/full-star.svg" alt="rating3">
+                                    <img src="images/icons/full-star.svg" alt="rating4">
+                                    <img src="images/icons/full-star.svg" alt="rating5">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feedback-text">
+                            <!-- hide in xsmall screens -->
+                            <div class="client-det">
+                                <h4>AR Shakir</h4>
+                                <p class="country">Arizona</p>
+                                <div class="rating">
+                                    <img src="images/icons/full-star.svg" alt="rating1">
+                                    <img src="images/icons/full-star.svg" alt="rating2">
+                                    <img src="images/icons/full-star.svg" alt="rating3">
+                                    <img src="images/icons/full-star.svg" alt="rating4">
+                                    <img src="images/icons/full-star.svg" alt="rating5">
+                                </div>
+                            </div>
+                            <p>
+                                “Out believe has request not how comfort evident. Up <span>delight cousins</span> we
+                                feeling minutes. Genius has looked end piqued
+                                spring. Down has rose feel find man. Learning day desirous informed expenses
+                                material
+                                returned six the. She <span>enabled</span>
+                                invited exposed him another. Reasonably conviction solicitude me mr at
+                                <span>discretion
+                                    reasonable</span>. Age out full gate bed day
+                                lose.”
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+    </section>
+    <footer>
+        <section class="discount">
+            <div class="card">
+                <h3 class="card-title">Get special Discounts</h3>
+                <p>Input email address and complete your subscription to get our special offer.</p>
+                <div>
+                    <input type="text" placeholder="enter your email">
+                    <button class="btn red-btn">Subscribe</button>
+                </div>
+            </div>
+        </section>
+        <div class="container">
+            <div class="wrapper d-flex md-flex-wrap">
+                <div class="company-info sm-full-width md-mb-30">
+                    <img src="images/light-logo.svg" alt="logo">
+                    <div class="social">
+                        <a href="#">
+                            <img src="images/icons/facebook-icon.svg" alt="facebook">
+                        </a>
+                        <a href="#">
+                            <img src="images/icons/twitter-icon.svg" alt="twitter">
+                        </a>
+                        <a href="#">
+                            <img src="images/icons/instagram-icon.svg" alt="instagram">
+                        </a>
+                        <a href="#">
+                            <img src="images/icons/linkedin-icon.svg" alt="linkedin">
+                        </a>
+                    </div>
+                </div>
+                <div class="contact sm-full-width md-mb-30">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li class="d-flex">
+                            <img src="images/icons/location-icon.svg" alt="location">
+                            <span>F1 - 320 Jeff Heights, Main Blvd, <br>
+                                Gulberg, Lahore, Pakistan</span>
+                        </li>
+                        <li class="d-flex">
+                            <img src="images/icons/call-icon.svg" alt="call">
+                            <span>+92 - 300 - 115 - 222 -444</span>
+                        </li>
+                        <li class="d-flex">
+                            <img src="images/icons/mail-icon.svg" alt="mail">
+                            <span>support@yannal.com</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Support</h3>
+                    <ul>
+                        <li>Faq</li>
+                        <li>Shipping & Returns</li>
+                        <li>Contact Us</li>
+                        <li>Our Partners</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Info</h3>
+                    <ul>
+                        <li>Dates</li>
+                        <li>Parties</li>
+                        <li>Brithdays</li>
+                        <li>Menu</li>
+                    </ul>
+                </div>
+            </div>
+            <p>©2021 Yannal Resturant</p>
+        </div>
     </footer>
-    <!-- end moro footer  -->
-    <script src="/main.js"></script>
 </body>
 
 </html>
